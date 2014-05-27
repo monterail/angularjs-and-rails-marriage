@@ -1,0 +1,6 @@
+angular.module('SampleApp').factory 'railsLocalesLoader', ($http) ->
+  (options) ->
+    $http.get("locales/#{options.key}.json").then (response) ->
+      response.data
+    , (error) ->
+      throw options.key

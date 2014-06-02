@@ -1,7 +1,7 @@
 class Translations
   class InvalidLocale < RuntimeError; end
 
-  def initialize(locales)
+  def initialize(locales = I18n.available_locales)
     @available_locales = locales.map(&:to_s)
   end
 

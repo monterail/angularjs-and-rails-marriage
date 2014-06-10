@@ -1,3 +1,0 @@
-== AngularJs and Rails marriage
-
-Sample application to demonstrate how to take advantage from symbiosis of AngularJs and Rails.
